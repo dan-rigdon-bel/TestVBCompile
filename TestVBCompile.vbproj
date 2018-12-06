@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="..\..\..\..\..\RhinoProjectPropertySheets\Grasshopper.Component.VB.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VectorComponents</RootNamespace>
+    <AssemblyName>VectorComponents</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\GrasshopperKeyFile.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>$(RhinoBinDir)\$(Configuration)\Plug-ins\Grasshopper\Components\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>$(RhinoBinDir)\$(Configuration)\Plug-ins\Grasshopper\Components\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\version.vb">
+      <Link>version.vb</Link>
+    </Compile>
+    <Compile Include="DivisionComponents.vb" />
+    <Compile Include="GridComponents.vb" />
+    <Compile Include="HyperbolicComponents.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyFirstComponent.vb" />
+    <Compile Include="PlaneComponents.vb" />
+    <Compile Include="PointComponents.vb" />
+    <Compile Include="RegionSliceComponent.vb" />
+    <Compile Include="SolarComponents.vb" />
+    <Compile Include="SpatialMappingComponents.vb" />
+    <Compile Include="VectorComponents.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\GrasshopperKeyFile.snk" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorComponentsLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDisplayDefaultSizeMenuIcon_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDisplayRelativeSizeMenuIcon_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDisplayScreenSizeMenuIcon_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\FuzzySprite_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BlurrySprite_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AdjustPlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AlignPlanes_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BarycentricPoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CloudDisplay_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CoordinateMaskParameter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CullDuplicatePoints_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurveFrame_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurveFrames_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurveFramesHorizontal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurveFramesPerpendicular_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurveHorizontalFrame_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CurvePerpendicularFrame_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CylindricalPoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Distance_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DivideCurve_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DivideCurveLength_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DivideDistance_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DivideSurface_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DotDisplay_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GenericClosestPoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HexagonalGrid_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\NumbersToPoints_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Plane3Pt_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneClosestPoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneComponents_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneFit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneLineLine_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneLinePoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneOffset_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneOrigin_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlanePlaneIntersection_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlanePoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneXY_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneZ_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointComponents_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointFromXYZ_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointGroups_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointSetCP_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointSetCPMultiple_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PointsToNumbers_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PolarPoint_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PolarPointReverse_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Populate2D_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Populate3D_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RadialGrid_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RandomPoints1D_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RectangularGrid_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RotatePlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SolarIncidence_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SortAlongCurve_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SortPoints_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SphericalDistribution_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SquareGrid_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\StraightenPlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SurfaceFrames_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TriangularGrid_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TriplePlaneIntersection_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\UnitVectorX_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\UnitVectorY_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\UnitVectorZ_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Vector2Pt_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorAddition_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorAmplitude_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorAngle_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorComponents_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorCrossProduct_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDisplay_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDisplay2_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDivide_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorDotProduct_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorFromXYZ_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorLength_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorMassAddition_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorMultiply_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorReverse_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorRotate_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VectorUnitize_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WorldXYPlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WorldXZPlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WorldYZPlane_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneCoordinates_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\DotNetSDK\rhinocommon\dotnet\RhinoCommon.csproj">
+      <Project>{ed38373e-290c-4bde-acba-1601484e582a}</Project>
+      <Name>RhinoCommon</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\C# IO\GH_IO.csproj">
+      <Project>{3ab2d4f3-e52e-4b5b-b211-89ce01641a25}</Project>
+      <Name>GH_IO</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Grasshopper\Grasshopper.vbproj">
+      <Project>{e74ac8ef-8838-420f-bb41-c307eb5a64aa}</Project>
+      <Name>Grasshopper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneRegion_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlaneFlip_24x24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(OutDir)$(TargetName)$(TargetExt)" "$(OutDir)$(TargetName).gha"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVBCompile", "TestVBCompile.csproj", "{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		DebugMacRhino|Any CPU = DebugMacRhino|Any CPU
+		ReleaseMacRhino|Any CPU = ReleaseMacRhino|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.DebugMacRhino|Any CPU.ActiveCfg = DebugMacRhino|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.DebugMacRhino|Any CPU.Build.0 = DebugMacRhino|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.ReleaseMacRhino|Any CPU.ActiveCfg = ReleaseMacRhino|Any CPU
+		{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}.ReleaseMacRhino|Any CPU.Build.0 = ReleaseMacRhino|Any CPU
+	EndGlobalSection
+EndGlobal
