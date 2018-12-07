@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVBCompile", "TestVBCompile.csproj", "{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestVBCompile", "TestVBCompile.vbproj", "{AD2BAC72-7756-48F5-9EBE-5CCE34854F1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
